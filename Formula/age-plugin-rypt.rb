@@ -8,24 +8,25 @@ class AgePluginRypt < Formula
   depends_on "age"
 
   on_macos do
+    depends_on macos: :ventura
     on_arm do
-      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.1.0/age-plugin-rypt-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b2a1c972beddf32c4429ccb6b73aad3177f3f1469708171b3e784f4363a1655d"
+      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.2.0/age-plugin-rypt-v0.2.0-darwin-arm64.tar.gz"
+      sha256 "380c4b15891e2cd029fd57f0c0dce18e5b31fedb26762eb518993d7f29eb88a0"
     end
     on_intel do
-      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.1.0/age-plugin-rypt-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "b1cf3a0ec95c9597f1606215e0b0bec411a1d36c603b78de2006fe7901c97f1c"
+      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.2.0/age-plugin-rypt-v0.2.0-darwin-amd64.tar.gz"
+      sha256 "3b0edc1201d14c330b55d29b8527cc851a97f629122e13c511cb321200fe2f4c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.1.0/age-plugin-rypt-v0.1.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7aefd99b1c84001098dbe990be62aa365a4d6edc0ce964014ef8eacb45111dfd"
+      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.2.0/age-plugin-rypt-v0.2.0-linux-arm64.tar.gz"
+      sha256 "ca92e2637d861e6161d9362321ff38d8074aa8bc552520e1b1c9a56b7dac5be1"
     end
     on_intel do
-      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.1.0/age-plugin-rypt-v0.1.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "f8afeeff4304d9eb12b12711731fd1635c30f25a2a4138bc6a2550d41b0c5e61"
+      url "https://github.com/x6c-co/age-plugin-rypt/releases/download/v0.2.0/age-plugin-rypt-v0.2.0-linux-amd64.tar.gz"
+      sha256 "a45be6717206a073b99f23e8c4c3789526031dbccc337bcfbe0ed8332a04f578"
     end
   end
 
